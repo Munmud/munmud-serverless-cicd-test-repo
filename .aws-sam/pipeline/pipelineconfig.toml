@@ -1,0 +1,18 @@
+version = 0.1
+[default.pipeline_bootstrap.parameters]
+pipeline_user = "arn:aws:iam::618758721119:user/aws-sam-cli-managed-munmud-dev-pipelin-PipelineUser-84u8rH4iaR8M"
+permissions_provider = "AWS IAM"
+
+[munmud-dev.pipeline_bootstrap.parameters]
+pipeline_execution_role = "arn:aws:iam::618758721119:role/aws-sam-cli-managed-munmud-de-PipelineExecutionRole-rcLSAikXCgVg"
+cloudformation_execution_role = "arn:aws:iam::618758721119:role/aws-sam-cli-managed-munmu-CloudFormationExecutionRo-PzydVxvxTH0s"
+artifacts_bucket = "aws-sam-cli-managed-munmud-dev-pip-artifactsbucket-wnrhgxv5kakb"
+image_repository = ""
+region = "ap-south-1"
+
+[munmud-prod.pipeline_bootstrap.parameters]
+pipeline_execution_role = "arn:aws:iam::618758721119:role/aws-sam-cli-managed-munmud-pr-PipelineExecutionRole-0EKXxRkw9qHa"
+cloudformation_execution_role = "arn:aws:iam::618758721119:role/aws-sam-cli-managed-munmu-CloudFormationExecutionRo-oN30go72xxJ6"
+artifacts_bucket = "aws-sam-cli-managed-munmud-prod-pi-artifactsbucket-9gdqzphjpp9x"
+image_repository = ""
+region = "ap-south-1"
